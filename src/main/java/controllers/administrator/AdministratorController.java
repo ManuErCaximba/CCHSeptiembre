@@ -15,6 +15,7 @@ import security.LoginService;
 import security.UserAccount;
 import services.ActorService;
 import services.AdministratorService;
+import services.XXXXService;
 
 import javax.validation.Valid;
 
@@ -24,6 +25,9 @@ public class AdministratorController extends AbstractController {
 
     @Autowired
     private AdministratorService administratorService;
+
+    @Autowired
+    private XXXXService xxxxService;
 
     @Autowired
     private ActorService actorService;
@@ -36,6 +40,12 @@ public class AdministratorController extends AbstractController {
         try {
             Assert.isTrue(userAccount.getAuthorities().iterator().next().getAuthority().equals("ADMIN"));
             result = new ModelAndView("administrator/dashboard");
+
+            /*QUERYS EXAMEN*/
+            result.addObject("QEXAMEN1", this.xxxxService.getAvgOfXXXXPerConference());
+            result.addObject("QEXAMEN2", this.xxxxService.getStddevOfXXXXPerConference());
+            result.addObject("QEXAMEN3", this.xxxxService.getRatioDraftXXXXVSTotal());
+            result.addObject("QEXAMEN4", this.xxxxService.getRatioFinalXXXXVSTotal());
 
             /*Q1*/
             result.addObject("Q11", this.administratorService.getAvgSubmissionPerConference());

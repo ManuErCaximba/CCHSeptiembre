@@ -15,6 +15,11 @@
 </head>
 <body>
     <security:authorize access="hasRole('ADMIN')">
+        <p><acme:showtext code="dashboard.QEXAMEN1" value="${QEXAMEN1}" fieldset="true"/></p>
+        <p><acme:showtext code="dashboard.QEXAMEN2" value="${QEXAMEN2}" fieldset="true"/></p>
+        <p><acme:showtext code="dashboard.QEXAMEN3" value="${QEXAMEN3}" fieldset="true"/></p>
+        <p><acme:showtext code="dashboard.QEXAMEN4" value="${QEXAMEN4}" fieldset="true"/></p>
+
         <p><acme:showtext code="dashboard.Q11" value="${Q11}" fieldset="true"/></p>
         <p><acme:showtext code="dashboard.Q12" value="${Q12}" fieldset="true"/></p>
         <p><acme:showtext code="dashboard.Q13" value="${Q13}" fieldset="true"/></p>

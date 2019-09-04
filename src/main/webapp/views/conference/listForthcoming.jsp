@@ -95,6 +95,10 @@
             </display:column>
         </security:authorize>
 
+        <display:column>
+            <acme:cancel url="xxxx/list.do?conferenceId=${row.id}" code="button.xxxxList"/>
+        </display:column>
+
     </display:table>
 
 

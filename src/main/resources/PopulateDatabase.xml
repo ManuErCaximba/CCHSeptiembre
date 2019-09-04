@@ -1310,4 +1310,36 @@
 		</property>
 	</bean>
 
+	<!-- XXXX -->
+
+	<bean id="XXXX1" class="domain.XXXX">
+		<property name="ticker" value="AAAA-1111"/>
+		<property name="moment" value="09/03/2019 15:00"/>
+		<property name="body" value="xxxx1"/>
+		<property name="cozitah1" value="xxxx1"/>
+		<property name="cozitah2" value="xxxx1"/>
+		<property name="isFinal" value="true"/>
+		<property name="conference" ref="conference1"/>
+	</bean>
+
+	<bean id="XXXX2" class="domain.XXXX">
+		<property name="ticker" value="AAAA-1111"/>
+		<property name="moment" value="08/03/2019 15:00"/>
+		<property name="body" value="xxxx1"/>
+		<property name="cozitah1" value="xxxx1"/>
+		<property name="cozitah2" value="xxxx1"/>
+		<property name="isFinal" value="true"/>
+		<property name="conference" ref="conference1"/>
+	</bean>
+
+	<bean id="XXXX3" class="domain.XXXX">
+		<property name="ticker" value="AAAA-1111"/>
+		<property name="moment" value="07/03/2019 15:00"/>
+		<property name="body" value="xxxx1"/>
+		<property name="cozitah1" value="xxxx1"/>
+		<property name="cozitah2" value="xxxx1"/>
+		<property name="isFinal" value="true"/>
+		<property name="conference" ref="conference1"/>
+	</bean>
+
 </beans>
